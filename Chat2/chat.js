@@ -23,7 +23,6 @@ function getTime() {
     return now.getHours() + ":" + now.getMinutes().toString().padStart(2, '0');
 }
 
-// Add message
 function addMessage(text, sender, user) {
 
     let row = document.createElement("div");
