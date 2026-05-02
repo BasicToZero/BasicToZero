@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat App</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #e5ddd5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            width: 380px;
+            height: 650px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: #06c755;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .chat-box {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message-row {
+            display: flex;
+            margin: 5px 0;
+            align-items: flex-end;
+        }
+
+        .user-row {
+            justify-content: flex-end;
+        }
+
+        .message {
+            padding: 8px 12px;
+            border-radius: 15px;
+            max-width: 60%;
+        }
+
+        .user {
+            background: #06c755;
+            color: white;
+        }
+
+        .bot {
+            background: #f1f0f0;
+        }
+
+        .profile {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+
+        .meta {
+            font-size: 10px;
+            color: gray;
+        }
+
+        .input-area {
+            display: flex;
+            border-top: 1px solid #ccc;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            background: #06c755;
+            color: white;
+            cursor: pointer;
+        }
+
+        .clear-btn {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+
+    <div class="header">
+        <span>Chat App</span>
+        <button class="clear-btn" onclick="clearChat()">Clear</button>
+    </div>
+
+    <div id="chatBox" class="chat-box"></div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script src="chat.js"></script>
+
+</body>
+</html>
