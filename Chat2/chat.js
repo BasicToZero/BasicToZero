@@ -6,7 +6,7 @@ const currentUser = {
 };
 
 const botUser = {
-    name: "Bot",
+    name: "Gerlee",
     pic: "images/Profile2.jpg"  
 };
 
@@ -71,7 +71,7 @@ function sendMessage() {
     addMessage(input, "user", currentUser);
 
     let lower = input.toLowerCase();
-    let reply = "I don't understand";
+    let reply = "oilogdoggue";
 
     if (lower.includes("sainuu")) {
         reply = "sain";
